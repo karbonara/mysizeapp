@@ -80,52 +80,11 @@ export const MeasurePage = () => {
                 </Link>
               </div>
             </div>{" "}
-            <div
-              className="h-full w-full swiper-slide swiper-slide-next"
-              style={{ width: 393 }}
-            >
-              <div className="h-full flex flex-col justify-between items-center">
-                <span
-                  className="copy fade-in text-lg text-center block"
-                  style={{
-                    translate: "none",
-                    rotate: "none",
-                    scale: "none",
-                    transform: "translate(0px, 0px)",
-                    opacity: 1
-                  }}
-                >
-                  <p>Bir sonraki ekran için hazır mısınız?</p>
-                  <p>&nbsp;</p>
-                  <p>
-                    <strong>Bulmak </strong>
-                    <strong>Renk alanı, </strong>
-                    <strong>
-                      ile ilişkili olan<br />
-                    </strong>
-                    <strong> Geniş</strong>
-                    <strong>
-                      ereksiyon halindeki penisinizin.
-                      <br />
-                      <br />
-                    </strong>
-                    Renk alanları:
-                    <strong>
-                      Aşağı kaydırın
-                      <br />
-                    </strong>
-                    Kaydırıcı: <strong>UNDO </strong>=  geri/<strong> Tamam</strong> =
-                    #passt
-                  </p>
-                </span>{" "}
-                <Link to="/measure/set" className="button rounded-full flex items-center justify-center flex-shrink-0 relative">
-                  <div className="button__bg bg-purple" /> {/**/}{" "}
-                  <span className="button__text relative uppercase font-semibold text-lg">
-                    Anlaşıldı
-                  </span>
-                </Link>
-              </div>
-            </div>
+
+
+
+
+
           </div>
           <span
             className="swiper-notification"

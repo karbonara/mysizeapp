@@ -95,7 +95,7 @@ export const CalibratePage = () => {
               alt="credit card"
               className={`card ${cardScale > 1 ? 'large' : ''}`}
               style={{
-                transform: `scale(${cardScale})`,
+                transform: `scale(${cardScale}) translateX(22%)`,
                 transformOrigin: '230% 50%',
                 transition: 'transform 0.3s ease-out',
                 rotate: 'none'
