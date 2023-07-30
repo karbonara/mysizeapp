@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const ItemPage = () => {
   return (
-    <>
+    <div id="app" className="overflow-hidden relative">
       <AsNavFor />
       <div className="flex justify-center mt-6"
         style={{
@@ -26,7 +26,7 @@ export const ItemPage = () => {
           </span>
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 

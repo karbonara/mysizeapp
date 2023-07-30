@@ -641,7 +641,7 @@ body {
 #app {
 	height: 100vh;
 	height: calc(1vh*100);
-	height: calc(var(--vh, 1vh)*100)
+	height: calc(var(--vh, 1vh)*90)
 }
 .copy strong {
 	color: #70aee4;

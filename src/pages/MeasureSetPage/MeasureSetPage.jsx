@@ -127,7 +127,7 @@ export const MeasureSetPage = () => {
   };
 
   return (
-    <div data-v-f8a94688="" id="app" className="overflow-hidden relative">
+    <div id="app" className="relative">
       <div
         data-v-5f8b795e=""
         data-v-f8a94688=""

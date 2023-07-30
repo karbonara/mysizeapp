@@ -4,7 +4,7 @@ export const CalibrateStartPage = () => {
   return (
     <>
       <div id="__layout">
-        <div data-v-0b575bfc="" id="app" className="overflow-hidden relative">
+        <div data-v-0b575bfc="" id="app" >
           <div
             data-v-5f8b795e=""
             data-v-0b575bfc=""
