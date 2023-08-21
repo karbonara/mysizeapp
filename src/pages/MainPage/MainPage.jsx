@@ -38,16 +38,16 @@ export const MainPage = () => {
             <div data-v-ff708fc4="" className="copy fade-in">
               <p>&nbsp;</p>
               <p>
-                <strong>En iyisi için </strong>
+                <strong>MÜKEMMEL UYUM İÇİN  </strong>
               </p>
               <p>
-                <strong>sadece en iyisi.</strong>
+                <strong>EN İYİSİ.</strong>
               </p>
             </div>
           </div>{" "}
           <div data-v-ff708fc4="" className="flex-grow flex flex-col justify-center">
             <div data-v-ff708fc4="" className="fade-in text-blue text-base">
-              MY.SIZE prezervatifinizi bulun&nbsp;
+              MY.SIZE prezervatif için bedeninizi bulun
             </div>{" "}
             <Link
 
@@ -57,10 +57,10 @@ export const MainPage = () => {
               <div className="button__bg bg-blue" />
               <span className="button__text relative uppercase font-semibold text-lg"
                 style={{
-                  fontSize: "1rem",
+                  fontSize: "0.9rem",
                 }}
               >
-                Cep telefonunu kalibre edin
+                Telefonunu uygun duruma getirmek için devam et
               </span>
             </Link>
           </div>

@@ -168,14 +168,17 @@ export const MeasureSetPage = () => {
                   top: element.top
                 }}
               />
-              {element.id && (
+              {/* {element.id && (
                 <Link to={`/item/${element.id}`} className="link-button">
                   Ok
                 </Link>
-              )}
+              )} */}
             </div>
           ))}
         </div>
+        <Link to={`/item/1`} className="link-button">
+          Ok
+        </Link>
         <div className="indicator">
           <img
             alt="" src="data:image/svg+xml;base64,PHN2ZyBpZD0iZG93biIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNDIuODkiIGhlaWdodD0iNjUuMDYiIHZpZXdCb3g9IjAgMCA0Mi44OSA2NS4wNiI+CiAgPHBvbHlnb24gcG9pbnRzPSIzMi4zMSA0My42MiAzMi4zMSAwIDEwLjU4IDAgMTAuNTggNDMuNjIgMCA0My42MiAyMS40NSA2NS4wNiA0Mi44OSA0My42MiAzMi4zMSA0My42MiIgc3R5bGU9ImZpbGw6ICNGRkYiLz4KICB0ZXN0Cjwvc3ZnPg=="

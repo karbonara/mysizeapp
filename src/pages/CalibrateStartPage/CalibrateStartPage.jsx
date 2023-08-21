@@ -53,20 +53,18 @@ export const CalibrateStartPage = () => {
                   >
                     <p>&nbsp;</p>
                     <p>
-                      Telefonunuzun fiziksel boyutunu ayarlamak için bir kredi kartına ihtiyacınız var
-                      ekranın boyutunu ayarlamak için.
+                      Ekranınızın fiziksel boyutunu ayarlamak için bir kredi kartına ihtiyacınız var.
                     </p>
                     <p>&nbsp;</p>
                     <p>
                       <strong>
-                        Endişelenmeyin, para çekilmeyecek - ve hiçbir dickpic çekilmeyecek
-                        yapılmış
+                        Endişelenmeyin! Para çekilmeyecek! Herhangi bir işlem yapılmayacak! Kredi kartları uluslararası standart boyutlara sahip olduğu için en doğru sonucu bulmanıza yardımcı olacak.
                       </strong>
                     </p>
                   </span>{" "}
                   <div className="absolute bottom-0 w-full flex justify-center">
                     <Link to="/calibrate" className="button rounded-full flex items-center justify-center flex-shrink-0 relative">
-                      <div className="button__bg bg-purple" /> {/**/}{" "}
+                      <div className="button__bg bg-purple" />
                       <span className="button__text relative uppercase font-semibold text-lg">
                         Anlaşıldı
                       </span>
