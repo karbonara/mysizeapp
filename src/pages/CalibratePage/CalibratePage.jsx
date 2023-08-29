@@ -1,61 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { useDispatch, useSelector } from 'react-redux'
 export const CalibratePage = () => {
-  const [cardScale, setCardScale] = useState(1);
-  const [thumbPosition, setThumbPosition] = useState(0);
-  const trackRef = useRef(null);
+  const dispatch = useDispatch();
+  const cardScale = useSelector(state => state.cardScale);
 
   const handleMinusClick = () => {
-    setCardScale((prevScale) => prevScale - 0.05);
+    dispatch({ type: 'DECREMENT_CARD_SCALE' });
   };
 
   const handlePlusClick = () => {
-    setCardScale((prevScale) => prevScale + 0.05);
-  };
-
-  const handleThumbTouchStart = (e) => {
-    e.preventDefault();
-    const touch = e.touches[0];
-    const thumb = e.target;
-    const track = thumb.parentNode;
-    const trackRect = track.getBoundingClientRect();
-    const thumbRect = thumb.getBoundingClientRect();
-    const thumbPosition = touch.clientX - trackRect.left;
-
-    setThumbPosition(thumbPosition);
-
-    const scale = thumbPosition / trackRect.width;
-    setCardScale((prevScale) => {
-      if (prevScale < 1) {
-        return 1;
-      }
-      if (prevScale > 2) {
-        return 2;
-      }
-      return prevScale;
-    });
-  };
-
-  const handleThumbTouchMove = (e) => {
-    e.preventDefault();
-    const touch = e.touches[0];
-    const thumb = e.target;
-    const track = thumb.parentNode;
-    const trackRect = track.getBoundingClientRect();
-    const thumbRect = thumb.getBoundingClientRect();
-    const thumbPosition = touch.clientX - trackRect.left;
-
-    setThumbPosition(thumbPosition);
-
-    const scale = thumbPosition / trackRect.width;
-    setCardScale(scale + 1);
-  };
-
-
-  const handleThumbTouchEnd = () => {
-    const savedThumbPosition = thumbPosition;
-    console.log(savedThumbPosition);
+    dispatch({ type: 'INCREMENT_CARD_SCALE' });
   };
 
   return (
@@ -71,7 +26,7 @@ export const CalibratePage = () => {
             srcSet="https://www.mysize-measure.com/my-size_logo.webp"
             type="image/webp"
             data-v-5f8b795e=""
-          />{" "}
+          />
           <img
             src="https://www.mysize-measure.com/my-size_logo.webp"
             alt="MY.SIZE logo"
@@ -81,7 +36,7 @@ export const CalibratePage = () => {
             data-v-5f8b795e=""
           />
         </picture>
-      </div>{" "}
+      </div>
       <div
         data-v-ab0c6790=""
         data-v-0b575bfc=""
@@ -103,11 +58,11 @@ export const CalibratePage = () => {
 
             />
           </div>
-
           <div className="slider"
             style={{
               display: 'flex',
               justifyContent: 'space-between',
+              marginTop: '40px',
             }}
           >
             <div
